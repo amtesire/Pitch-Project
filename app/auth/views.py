@@ -17,7 +17,7 @@ def register():
         db.session.add(user)
         db.session.commit()
         
-        mail_message("Welcome to PitchApp", "email/welcome_user", "user.email", user = user)
+        mail_message("Welcome to Pitch", "email/welcome_user", "user.email", user = user)
         return redirect(url_for('auth.login'))
         title = "New Account"
     return render_template('auth/register.html',registration_form = form)
@@ -37,7 +37,7 @@ def login():
         flash ('Invalid username or Password')
         
         
-    title = "PitchApp Login"
+    title = "Pitch Login"
     return render_template('auth/login.html', login_form = login_form, title = title)
 
 
@@ -46,3 +46,4 @@ def login():
 def logout():
     logout_user()
     return redirect(url_for("main.index"))
+    
