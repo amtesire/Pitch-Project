@@ -20,7 +20,10 @@ This is an application where you can post your pitch and view pitches posted by 
 * Database(psql)
 
 ## Live Link
+https://pitchproj.herokuapp.com/
 
+## Known Bugs
+no known bugs
 
 ### License
 MIT License
